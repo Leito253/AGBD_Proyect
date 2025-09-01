@@ -29,15 +29,95 @@ Envios: Información sobre envíos de compras a domicilio (estado, fecha de env�
 # Relación Entidad
 ```mermaid
 erDiagram
+
+    Usuario {
+        INT idUsuario PK
+        VARCHAR(45) Nombre
+        VARCHAR(20) Contrasenia
+    }
+
+    Mangas {
+        INT idManga PK
+        VARCHAR(45) Nombre
+        DATE Lanzamiento
+        VARCHAR(45) Genero
+        DECIMAL(10_2) Precio
+        VARCHAR(45) Autor
+        VARCHAR(45) Editorial
+    }
+
+    Empleados {
+        BIGINT Cuil PK
+        VARCHAR(45) Nombre
+        VARCHAR(45) Apellido
+        INT DNI
+        SMALLINT SueldoUSD
+    }
+
+    Compra {
+        INT NroCompra PK
+        INT idUsuario FK
+        INT idManga FK
+        DECIMAL(10_2) PrecioTotal
+        DATETIME FechaCompra
+    }
+
+    Devoluciones {
+        INT NroCompra PK, FK
+        INT idUsuario FK
+        VARCHAR(45) Motivo
+    }
+
+    Calificacion {
+        INT idCalificacion PK
+        INT idUsuario FK
+        INT idManga FK
+        FLOAT PtjeEstrellas
+        VARCHAR(255) Comentarios
+        DATETIME FechaHora
+    }
+
+    Sucursales {
+        INT idSucursal PK
+        VARCHAR(45) Ciudad
+        VARCHAR(100) Direccion
+    }
+
+    Stock {
+        INT idManga PK, FK
+        INT idSucursal PK, FK
+        INT Cantidad
+    }
+
+    Sucursales_Empleados {
+        INT idSucursal FK
+        BIGINT Cuil FK
+    }
+
+    Envios {
+        INT NroCompra PK, FK
+        VARCHAR(45) Ciudad
+        VARCHAR(100) Calle
+        INT Direccion
+        INT CodigoPostal
+        VARCHAR(100) Referencia
+    }
+
+    %% Relaciones
     Usuario ||--o{ Compra : realiza
-    Usuario ||--o{ Calificacion : opina
     Usuario ||--o{ Devoluciones : solicita
-    Mangas ||--o{ Compra : vendido
-    Mangas ||--o{ Calificacion : recibe
-    Mangas ||--o{ Stock : tiene
-    Compra ||--o{ Devoluciones : genera
-    Compra ||--o{ Envios : se_envia
-    Sucursales ||--o{ Stock : almacena
-    Sucursales ||--o{ Sucursales_Empleados : contrata
-    Empleados ||--o{ Sucursales_Empleados : trabaja_en
+    Usuario ||--o{ Calificacion : escribe
+
+    Mangas ||--o{ Compra : "es comprado"
+    Mangas ||--o{ Calificacion : "recibe"
+    Mangas ||--o{ Stock : "se almacena en"
+
+    Compra ||--o{ Devoluciones : "puede generar"
+    Compra ||--|| Envios : "genera"
+
+    Sucursales ||--o{ Stock : contiene
+    Sucursales ||--o{ Sucursales_Empleados : tiene
+
+    Empleados ||--o{ Sucursales_Empleados : trabaja
+
 ```
