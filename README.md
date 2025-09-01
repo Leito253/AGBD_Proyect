@@ -27,6 +27,8 @@ Stock: Cantidad de mangas disponibles en cada sucursal.
 Envios: Información sobre envíos de compras a domicilio (estado, fecha de envío y entrega).
 
 # Relación Entidad
+´´´mermaid
+´´´
 erDiagram
     Usuario ||--o{ Compra : realiza
     Usuario ||--o{ Calificacion : opina
@@ -39,3 +41,5 @@ erDiagram
     Sucursales ||--o{ Stock : almacena
     Sucursales ||--o{ Sucursales_Empleados : contrata
     Empleados ||--o{ Sucursales_Empleados : trabaja_en
+
+´´´
