@@ -28,7 +28,6 @@ Envios: Información sobre envíos de compras a domicilio (estado, fecha de env�
 
 # Relación Entidad
 ´´´mermaid
-´´´
 erDiagram
     Usuario ||--o{ Compra : realiza
     Usuario ||--o{ Calificacion : opina
