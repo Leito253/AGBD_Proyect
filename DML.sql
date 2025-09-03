@@ -8,13 +8,9 @@ VALUES
 ('PedroMartinez', 'xuy5kjw39r'),
 ('RocioDiaz', 'PaSsW098'),
 ('SofiaLopez', 'n9y43mndk'),
-('MiguelSosa', 'qwe8743jH'),
-('ValentinaRamos', 'poi98uynm'),
-('DiegoFernandez', 'klj76sdfg');
 
 -- MANGAS
 INSERT INTO Mangas (Nombre, Lanzamiento, Genero, Precio, Autor, Editorial)
-
 VALUES ('Naruto', '1999-09-21', 'Shonen', 15990, 'Masashi Kishimoto', 'Shueisha'),
 ('One Piece', '1997-07-22', 'Shonen', 18500, 'Eiichiro Oda', 'Shueisha'),
 ('Dragon Ball Z', '1989-04-15', 'Shonen', 17990, 'Akira Toriyama', 'Shueisha'),
@@ -77,5 +73,6 @@ VALUES
 ('La Plata', 'Hipolito Yrigoyen', '1132', 1407, 'En medio de un kiosco'),
 ('Corrientes','Callao' , '243', 5000, 'Frente a la plaza'),
 ('Rosario', 'San Martin', '1451', 2000, 'Cerca del centro comercial');
+
 
 
