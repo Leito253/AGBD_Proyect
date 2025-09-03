@@ -1,10 +1,16 @@
--- USUARIOS
+-- USUARIO
 INSERT INTO Usuario (Nombre, Contrasenia)
-VALUES ('JuanPerez', 'ghYt57823V'),
+VALUES 
+('JuanPerez', 'ghYt57823V'),
 ('AnaGarcia', '178efgye34'),
 ('CarlosGomez', '4reuy45e8e'),
 ('LauraMendez', 'yt82jxnbv4'),  
-('PedroMartinez', 'xuy5kjw39r');
+('PedroMartinez', 'xuy5kjw39r'),
+('RocioDiaz', 'PaSsW098'),
+('SofiaLopez', 'n9y43mndk'),
+('MiguelSosa', 'qwe8743jH'),
+('ValentinaRamos', 'poi98uynm'),
+('DiegoFernandez', 'klj76sdfg');
 
 -- MANGAS
 INSERT INTO Mangas (Nombre, Lanzamiento, Genero, Precio, Autor, Editorial)
@@ -71,4 +77,5 @@ VALUES
 ('La Plata', 'Hipolito Yrigoyen', '1132', 1407, 'En medio de un kiosco'),
 ('Corrientes','Callao' , '243', 5000, 'Frente a la plaza'),
 ('Rosario', 'San Martin', '1451', 2000, 'Cerca del centro comercial');
+
 
