@@ -47,11 +47,11 @@ VALUES
 -- CALIFICACIÓN
 INSERT INTO Calificacion (idUsuario, idManga, Puntaje, Comentarios, FechaHora)
 VALUES  
-(1, 1, 5, 'Excelente manga, atrapante desde el inicio', ),
-(2, 2, 4, 'Muy bueno, aunque a veces se hace largo', ),
-(3, 3, 5, 'Obra maestra, lo recomiendo totalmente', ),
-(4, 4, 3, 'Está bien, pero esperaba más acción', ),
-(5, 1, 4, 'Me gusta mucho, aunque no es mi favorito', );
+(1, 1, 5, 'Excelente manga, atrapante desde el inicio', '2025-08-01 14:30:00'),
+(2, 2, 4, 'Muy bueno, aunque a veces se hace largo', '2025-08-02 16:15:00'),
+(3, 3, 5, 'Obra maestra, lo recomiendo totalmente', '2025-08-03 12:45:00'),
+(4, 4, 3, 'Está bien, pero esperaba más acción', '2025-08-04 18:20:00'),
+(5, 1, 4, 'Me gusta mucho, aunque no es mi favorito', '2025-08-05 10:05:00');
 
 -- STOCK
 INSERT INTO Stock (idManga, idSucursal, Cantidad)
