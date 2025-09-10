@@ -1,0 +1,12 @@
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/obj/Debug/net8.0/Mangas.Core.GeneratedMSBuildEditorConfig.editorconfig
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/obj/Debug/net8.0/Mangas.Core.AssemblyInfoInputs.cache
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/obj/Debug/net8.0/Mangas.Core.AssemblyInfo.cs
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/obj/Debug/net8.0/Mangas.Core.csproj.CoreCompileInputs.cache
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/obj/Debug/net8.0/Mangas.Core.sourcelink.json
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/bin/Debug/net8.0/Mangas.Core.deps.json
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/bin/Debug/net8.0/Mangas.Core.dll
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/bin/Debug/net8.0/Mangas.Core.pdb
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/obj/Debug/net8.0/Mangas.Core.dll
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/obj/Debug/net8.0/refint/Mangas.Core.dll
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/obj/Debug/net8.0/Mangas.Core.pdb
+/home/et12alumno/Escritorio/Mangas/src/Mangas.Core/obj/Debug/net8.0/ref/Mangas.Core.dll

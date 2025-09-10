@@ -1,3 +1,5 @@
+-- DDL
+
 DROP DATABASE IF EXISTS BD_Mangas;
 CREATE DATABASE BD_Mangas;
 USE BD_Mangas;
