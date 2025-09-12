@@ -7,6 +7,7 @@ using Dapper;
 using MySqlConnector;
 using Mangas.Core;
 
+//Falta Actualizar
 namespace Mangas.Dapper
 {
     public class AdoDapper : IAdo
